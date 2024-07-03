@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px solid black;
+  outline: 0;
+}
+
+:root {
+  --text: #323232;
+  --background: #F5F4F2;
+  --boy-color: #89CFF0;
+  --girl-color: #FFB6C1;
+  --lavanda: #E6E6FA;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background);
+  background-image: url(assets/background-stars.jpg);
+  overflow: auto;
+}
+
+.header-container {
+  width: 95%;
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.637);
+  border-radius: 40px;
+
+  .border-linear-gradient {
+    width: 125px;
+    height: 125px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #89CFF0, #FFB6C1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image-container {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: white;
+
+      &>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 0;
+      }
+    }
+
+  }
+
+  .title {
+    font-family: "Playwrite SK";
+    font-size: 3.2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #73bee0, #e693a0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 2rem 4rem 2rem;
+
+  .title-secondary {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text);
+  }
+
+  .list-container {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+
+    .list-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-inline: 2rem;
+      list-style: disc;
+
+
+      .list-item {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--text);
+      }
+    }
+  }
+}
+
+.light-blue {
+  background-color: rgba(137, 207, 240, 0.3);
+}
+
+.light-pink {
+  background-color: rgba(255, 182, 193, 0.3);
+}
