@@ -10,52 +10,100 @@
       href="https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Chá revelação</title>
+    <title>Chá Revelação - Gabriel ou Maya</title>
   </head>
   <body>
-    <header class="header-container">
+    <div class="presentation">
       <div class="image-container">
-        <img src="assets/urso_voando.png" alt="imagem de ursinhos" />
+        <img
+          src="assets/urso_voando.png"
+          alt="Urso com Balões"
+          class="bear-image"
+        />
       </div>
-      <h1 class="title">
-        <span class="title-p-1">Chá</span>
-        <span class="title-p-2">Revelação</span>
-      </h1>
-    </header>
+      <div class="content">
+        <div class="title">
+          <p>Bem-vindo</p>
+          <p>ao</p>
+          <p>Chá Revelação</p>
+        </div>
+        <p class="nomes">
+          <span class="gabriel">Gabriel</span>
 
-    <main class="main-container">
-      <h2 class="title-secondary">Entradinhas</h2>
+          <span class="ou">ou</span>
 
-      <section class="list-container">
-        <h3 class="list-title">Salgados</h3>
-        <ul class="list">
-          <li class="list-item">Coxinha</li>
-          <li class="list-item">Bolinho de queijo</li>
-          <li class="list-item">Risole</li>
-        </ul>
-        <img class="food-image" src="assets/salgados.jpeg" alt="">
-      </section>
+          <span class="maya">Maya</span>
+        </p>
+        <button class="toggle">Ver cardápio</button>
+      </div>
+    </div>
+    <div class="menu">
+      <header class="header-container">
+        <img
+          class="logo-image"
+          src="assets/urso_voando.png"
+          alt="imagem de ursinhos"
+        />
+        <h1 class="title">Chá Revelação</h1>
+      </header>
+      <main class="main-container">
+        <h2 class="title-secondary">Entradinhas</h2>
+        <section class="list-container">
+          <h3 class="list-title">Salgados</h3>
+          <ul class="list">
+            <li class="list-item">Coxinha</li>
+            <li class="list-item">Bolinho de queijo</li>
+            <li class="list-item">Risole</li>
+          </ul>
+          <img class="food-image" src="assets/salgados.jpeg" alt="" />
+        </section>
 
-      <section class="list-container">
-        <h3 class="list-title">Crepe</h3>
-        <ul class="list">
-          <li class="list-item">Queijo</li>
-          <li class="list-item">Carne com queijo</li>
-          <li class="list-item">Frango com catupiry</li>
-          <li class="list-item">Presunto e queijo</li>
-          <li class="list-item">Camarão</li>
-          <li class="list-item">Palmito</li>
-        </ul>
-        <img class="food-image" src="assets/crepe.jpg" alt="">
-      </section>
+        <section class="list-container">
+          <h3 class="list-title">Extras</h3>
+          <ul class="list">
+            <li class="list-item">Torrada com pate</li>
+          </ul>
+          <img class="food-image" src="assets/torradas.jpg" alt="" />
+        </section>
 
-      <section class="list-container">
-        <h3 class="list-title">Extras</h3>
-        <ul class="list">
-          <li class="list-item">Torrada com pate</li>
-        </ul>
-        <img class="food-image" src="assets/torradas.jpg" alt="">
-      </section>
-    </main>
+        <h2 class="title-secondary">Prato principal</h2>
+        <section class="list-container">
+          <h3 class="list-title">Crepe Francês</h3>
+          <ul class="list">
+            <li class="list-item">Queijo</li>
+            <li class="list-item">Carne com queijo</li>
+            <li class="list-item">Frango com catupiry</li>
+            <li class="list-item">Presunto e queijo</li>
+            <li class="list-item">Camarão</li>
+            <li class="list-item">Palmito</li>
+          </ul>
+          <img class="food-image" src="assets/crepe.jpg" alt="" />
+        </section>
+
+        <h2 class="title-secondary">Acompanhamentos</h2>
+        <section class="list-container">
+          <h3 class="list-title">Acompanhamentos</h3>
+          <ul class="list">
+            <li class="list-item">Molho vermelho</li>
+            <li class="list-item">Molho branco</li>
+            <li class="list-item">Saladas Verdes</li>
+            <li class="list-item">Macarrão penne</li>
+          </ul>
+          <img class="food-image" src="assets/molhos.jpg" alt="" />
+        </section>
+
+        <h2 class="title-secondary">Bebidas</h2>
+        <section class="list-container">
+          <h3 class="list-title">Bebidas</h3>
+          <ul class="list">
+            <li class="list-item">Agua</li>
+            <li class="list-item">Suco</li>
+            <li class="list-item">Refrigerante</li>
+          </ul>
+          <img class="food-image" src="assets/bebidas.jpg" alt="" />
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
